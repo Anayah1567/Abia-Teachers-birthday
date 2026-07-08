@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Open Me 💌</title>
+
+<style>
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(#ffd6e8,#fff7fb);
+font-family:Arial;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+}
+
+.envelope{
+font-size:120px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.envelope:hover{
+transform:scale(1.1);
+}
+
+h2{
+color:#ff5fa2;
+}
+
+p{
+color:#777;
+}
+
+button{
+display:none;
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff7eb6;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>A Letter For Detective Bia 💗</h2>
+
+<div class="envelope" onclick="openLetter()">
+💌
+</div>
+
+<p id="text">Tap the envelope to open it.</p>
+
+<button id="next" onclick="window.location.href='memories.html'">
+Read the Letter 💖
+</button>
+
+</div>
+
+<script>
+
+function openLetter(){
+
+document.querySelector(".envelope").innerHTML="💖";
+
+document.getElementById("text").innerHTML="The letter is ready...";
+
+document.getElementById("next").style.display="inline-block";
+
+}
+
+</script>
+
+</body>
+</html>
