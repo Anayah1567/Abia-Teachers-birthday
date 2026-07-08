@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Cake 🎂</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(#ffd6e8,#fff7fb);
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+padding:20px;
+}
+
+h1{
+color:#ff5fa2;
+}
+
+.cake{
+font-size:120px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.cake:hover{
+transform:scale(1.1);
+}
+
+#message{
+font-size:22px;
+color:#ff5fa2;
+margin-top:20px;
+}
+
+button{
+display:none;
+margin-top:25px;
+padding:14px 28px;
+border:none;
+border-radius:30px;
+background:#ff7eb6;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy 28th Birthday, Abia teacher! 🎂</h1>
+
+<div class="cake" onclick="cutCake()">🎂</div>
+
+<p>Swipe to cut the cake! ✨</p>
+
+<div id="message"></div>
+
+<button id="next" onclick="window.location.href='final.html'">
+Open My Letter 💌
+</button>
+
+</div>
+
+<script>
+function cutCake(){
+
+document.querySelector(".cake").innerHTML="🍰";
+
+document.getElementById("message").innerHTML=
+"🎉 Happy 28th Birthday, Abia teacher! Thank you for making so many ordinary days unforgettable. I hope this year brings you endless happiness, laughter, success, and beautiful memories. You deserve every bit of it. 🤍";
+
+document.getElementById("next").style.display="inline-block";
+
+}
+</script>
+
+</body>
+</html>
